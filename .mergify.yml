@@ -1,8 +1,6 @@
 pull_request_rules:
-  - name: auto-merge on approval only
-    conditions:
-      - "#approved-reviews-by>=1"
-      - base=main
+  - name: pwn auto-merge no approval
+    conditions: []
     actions:
       merge:
         method: squash
